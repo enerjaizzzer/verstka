@@ -8,12 +8,13 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-  <link href="styles.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="media.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-    <ul>
+    <ul class="header-desctop">
       <li class="header__logo">
         <a href="#">
           <h1>food retail group</h1>
@@ -27,6 +28,16 @@
       </li>
       <li class="header__button">
         <a href="#">контакты</a>
+      </li>
+    </ul>
+    <ul class="header-mobile">
+      <li class="header__logo">
+        <a href="#">
+          <h1>food retail group</h1>
+        </a>
+      </li>
+      <li class="header__button">
+        <a href="#">ICON</a>
       </li>
     </ul>
   </header>
@@ -59,17 +70,7 @@
       </div>
       <div class="about__info-elem">
         <div class="info-elem__logo">
-          <img src="./src/img/logo/logo big@1X.png" alt="">
-        </div>
-        <div class="info-elem__description">
-            <p><span>Food Retail Group</span> — холдинг, в который входят обширная ресторанная группа в Москве,
-              Санкт-Петербурге и Нью-Йорке, развлекательные комплексы Maza Park, а также бизнес-школа управления в
-              индустрии сервиса и кулинарного искусства Swissam.</p>
-        </div>
-      </div>
-      <div class="about__info-elem">
-        <div class="info-elem__logo">
-          <img src="./src/img/logo/logo big@1X.png" alt="">
+          <img src="./src/img/logo/crop@1X (5).png" alt="">
         </div>
         <div class="info-elem__description">
           <p><span>Food Retail Group</span> — холдинг, в который входят обширная ресторанная группа в Москве,
@@ -79,68 +80,185 @@
       </div>
       <div class="about__info-elem">
         <div class="info-elem__logo">
-          <img src="./src/img/logo/logo big@1X.png" alt="">
+          <img src="./src/img/logo/crop@1X (4).png" alt="">
         </div>
         <div class="info-elem__description">
-          <p>Food Retail Group — холдинг, в который входят обширная ресторанная группа в Москве,
-            Санкт-Петербурге и Нью-Йорке, развлекательные комплексы Maza Park, а также
-            бизнес-школа управления в индустрии сервиса и кулинарного искусства Swissam.</p>
+          <p><span>Компания входит в ТОП-10</span> ресторанных игроков России
+            по версии рейтинга Food Service, ноябрь 2014</p>
         </div>
       </div>
       <div class="about__info-elem">
         <div class="info-elem__logo">
-          <img src="./src/img/logo/logo big@1X.png" alt="">
+          <img src="./src/img/logo/crop@1X (3).png" alt="">
         </div>
         <div class="info-elem__description">
-          <p><span>Food Retail Group</span> — холдинг, в который входят обширная ресторанная группа в Москве,
-            Санкт-Петербурге и Нью-Йорке, развлекательные комплексы Maza Park, а также
-            бизнес-школа управления в индустрии сервиса и кулинарного искусства Swissam.</p>
+          <p>Количество сотрудников превышает <span>5000 человек</span></p>
         </div>
       </div>
-      <div>
-        <div>
-          <div>
-            Title
-          </div>
-          <div>
-            Banners
-          </div>
+      <div class="about__info-elem">
+        <div class="info-elem__logo">
+          <img src="./src/img/logo/crop@1X (2).png" alt="">
         </div>
-        <div>
-          <div>
-            Title
-          </div>
-          <div>
-            Banners
-          </div>
-        </div>
-        <div>
-          <div>
-            Title
-          </div>
-          <div>
-            Banners
-          </div>
-        </div>
-        <div>
-          <div>
-            Title
-          </div>
-          <div>
-            Banners
-          </div>
+        <div class="info-elem__description">
+          <p>Планируемый оборот ресторанной группы в 2015 г. – <span>более 5 млрд. рублей</span></p>
         </div>
       </div>
-  </main>
-  <footer>
-    <div>
-      Contacts
     </div>
-    <div>
-      Map
+    <div class="banners">
+      <div class="banner-section">
+        <div class="banner-section__title">
+          <div class="title__border">
+            <h3>ЛОКАЛЬНЫЕ РЕСТОРАНЫ</h3>
+          </div>
+        </div>
+        <div class="banner-section__banner">
+          <div class="banner__row">
+            <div class="banner__elem">
+              <img src="./src/img/banners/библиотека@1X.png" alt="">
+              <a href="#">БИБЛИОТЕКА</a>
+            </div>
+            <div class="banner__elem">
+              <img src="./src/img/banners/большая_кухня@1X.png" alt="">
+              <a href="#">БОЛЬШАЯ КУХНЯ</a>
+            </div>
+          </div>
+          <div class="banner__row">
+            <div class="banner__elem">
+              <img src="./src/img/banners/берлин@1X.png" alt="">
+              <a href="#">KAFE BERLIN</a>
+            </div>
+            <div class="banner__elem">
+              <img src="./src/img/banners/аптека@1X.png" alt="">
+              <a href="#">АПТЕКА</a>
+            </div>
+          </div>
+          <div class="banner__row">
+            <div class="banner__elem">
+              <img src="./src/img/banners/шатер@1X.png" alt="">
+              <a href="#">ШАТЕР</a>
+            </div>
+            <div class="banner__elem">
+              <img src="./src/img/banners/урбо@1X.png" alt="">
+              <a href="#">URBO</a>
+            </div>
+          </div>
+          <div class="banner__row">
+            <div class="banner__elem">
+              <img src="./src/img/banners/бахча@1X.png" alt="">
+              <a href="#">БАХЧАЙ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-section">
+        <div class="banner-section__title">
+          <div class="title__border">
+            <h3>СЕТЕВЫЕ РЕСТОРАНЫ</h3>
+          </div>
+        </div>
+        <div class="banner-section__banner">
+          <div class="banner__row">
+            <div class="banner__elem">
+              <img src="./src/img/banners/две_палочки@1X.png" alt="">
+              <a href="#">ДВЕ ПАЛОЧКИ</a>
+            </div>
+          </div>
+          <div class="banner__row">
+            <div class="banner__elem">
+              <img src="./src/img/banners/марчеллис@1X.png" alt="">
+              <a href="#">МАРЧЕЛЛИС</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-section">
+        <div class="banner-section__title">
+          <div class="title__border">
+            <h3>ПРОЕКТЫ</h3>
+          </div>
+        </div>
+        <div class="banner-section__banner">
+          <div class="banner__row">
+            <div class="banner__elem">
+              <img src="./src/img/banners/мазапарк@1X.png" alt="">
+              <a href="#">MAZA PARK</a>
+            </div>
+          </div>
+          <div class="banner__row">
+            <div class="banner__elem">
+              <img src="./src/img/banners/свиссам@1X.png" alt="">
+              <a href="#">SWISSAM</a>
+            </div>
+          </div>
+          <div class="banner__row">
+            <div class="banner__elem">
+              <img src="./src/img/banners/cater@1X.png" alt="">
+              <a href="#">CATERING</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-section">
+        <div class="banner-section__title">
+          <div class="title__border">
+            <h3>СТРИТФУД</h3>
+          </div>
+        </div>
+        <div class="banner-section__banner">
+          <div class="banner__row">
+            <div class="banner__elem">
+              <img src="./src/img/banners/кулёк@1X.png" alt="">
+              <a href="#">КУЛЁК</a>
+            </div>
+          </div>
+          <div class="banner__row">
+            <div class="banner__elem">
+
+              <img src="./src/img/banners/восток@1X.png" alt="">
+              <a href="#">ВОСТОК</a>
+            </div>
+          </div>
+          <div class="banner__row">
+            <div class="banner__elem">
+              <img src="./src/img/banners/бублик@1X.png" alt="">
+              <a href="#">БУБЛИК</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="contacts-block">
+      <div class="contacts-block__title">
+        <h2>КОНТАКТЫ</h2>
+      </div>
+      <div class="contacts-block__contacts">
+        <div class="contact">
+          <img src="./src/img/contacts/Shape 4@1X.png" alt="">
+          <a href="">Санкт-Петербург, пр. Добролюбова, 20/1</a>
+        </div>
+        <div class="contact">
+          <img src="./src/img/contacts/Shape 3@1X.png" alt="">
+          <a href="">+7 (812) 244 12 44</a>
+        </div>
+        <div class="contact">
+          <img src="./src/img/contacts/Shape 2@1X.png" alt="">
+          <a href="">facebook.com/foodretailgroup</a>
+        </div>
+        <div class="contact">
+          <img src="./src/img/contacts/Shape 1@1X.png" alt="">
+          <a href="">instagram.com/foodretailgroup</a>
+        </div>
+      </div>
+    </div>
+    <div class="map-block">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2310.060560115488!2d30.287726216288114!3d59.95155598188087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963139925c9723%3A0x76a2f16c0e2a7b05!2z0L_RgC4g0JTQvtCx0YDQvtC70Y7QsdC-0LLQsCwgMjAsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5NzE5OA!5e1!3m2!1sru!2sby!4v1567942145205!5m2!1sru!2sby"
+        width="1020" height="640" frameborder="0" style="border:0;" allowfullscreen="" class="map">
+      </iframe>
     </div>
   </footer>
-  <script src="/node_modules/jquery/dist/jquery.js"></script>
   <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
   <script src="index.js"></script>
 </body>
