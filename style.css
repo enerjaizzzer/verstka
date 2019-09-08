@@ -485,4 +485,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+}
+.footer .map-block .map {
+  overflow: hidden;
 }

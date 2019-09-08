@@ -636,10 +636,22 @@ li {
 
         &:nth-child(1) {
           margin-left: 62px;
+
+          & a {
+            &:hover {
+              text-decoration: underline;
+            }
+          }
         }
 
         &:nth-child(2) {
           margin-left: 72px;
+
+          & a {
+            &:hover {
+              text-decoration: underline;
+            }
+          }
         }
 
         &:nth-child(3) {
@@ -670,5 +682,11 @@ li {
     display        : flex;
     justify-content: center;
     align-items    : center;
+    width          : 100vw;
+
+    & .map {
+      overflow: hidden;
+    }
+
   }
 }
