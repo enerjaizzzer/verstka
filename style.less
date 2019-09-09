@@ -1,7 +1,9 @@
 @font-face {
   font-family: PFDinTextCompPro;
-  src        : url(./src/fonts/ofont.ru_PF\ Din\ Text\ Comp\ Pro\ Medium.ttf);
-  src        : url(./src/fonts/pfdintextcomppro-light.ttf);
+  src        : url(src/fonts/PFDinTextCompPro-Light.ttf),
+  url(src/fonts/ofont.ru_PF\ Din\ Text\ Comp\ Pro\ Medium.ttf);
+  //src        : url(/src/fonts/ofont.ru_PF\ Din\ Text\ Comp\ Pro\ Medium.ttf);
+  //src        : url(src/fonts/pfdintextcomppro-light.ttf);
 }
 
 * {
@@ -163,15 +165,62 @@ li {
           color: rgba(255, 0, 0, 1);
         }
       }
+      & .submenu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        background-color: white;
+        border: 1px solid #3a4858;
+        & > .header__button {
+          display: flex;
+          flex-direction: column;
+          &:nth-child(1) {
+            margin-left: 0;
+          }
+          &:nth-child(3) {
+            margin-left: 0;
+          }
+          & > a {
+            display: block;
+            padding: 10px;
+            color: #3a4858;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      &:hover {
+        & > .submenu {
+          display: block;
+          z-index: 20;
+        }
+      }
     }
-
   }
 }
 
 .carousel {
+  display: flex;
   overflow: hidden;
   position: relative;
-
+  justify-content: center;
+  align-items: center;
+  &:before {
+    content: "";
+      width: 95px;
+      height: 95px;
+      opacity: 0.5;
+      border-radius: 50%;
+      display: flex;
+      position: absolute;
+      background-color:red;
+      z-index: 17;
+      margin-top: 80px;
+  }
   & .carousel__container {
     display: flex;
   }
