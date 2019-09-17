@@ -14,7 +14,6 @@
 
 body {
   font-family: PFDinTextCompPro;
-  overflow-x : hidden;
 }
 
 h1 {
@@ -45,54 +44,43 @@ li {
   height        : 80px;
   display       : flex;
   text-transform: uppercase;
-
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  margin: 0 auto;
+  & .header__logo {
+    position   : relative;
+    margin-right: auto;
+    margin-left: 15px;
+    color     : #3a4858;
+    transition: 0.5s;
+    font-size  : 39px;
+    font-weight: 700;
+      &:hover {
+        color: rgba(255, 0, 0, 1);
+      }
+    &:after {
+      width           : 12px;
+      height          : 12px;
+      background-color: rgba(255, 0, 0, 1);
+      border-radius   : 50%;
+      content         : "";
+      position        : absolute;
+      display         : block;
+      bottom          : 7px;
+      left            : -18px;
+    }
+  }
   & .header-desctop {
     display        : flex;
-    width          : 100%;
-    justify-content: start;
+    justify-content: end;
     align-items    : center;
-
-    & .header__logo {
-      margin-left: 336px;
-      position   : relative;
-
-      & a {
-        color     : #3a4858;
-        transition: 0.5s;
-
-        &:hover {
-          color: rgba(255, 0, 0, 1);
-        }
-
-        & h1 {
-          font-size  : 39px;
-          font-weight: 700;
-        }
-      }
-
-      &:after {
-        width           : 12px;
-        height          : 12px;
-        background-color: rgba(255, 0, 0, 1);
-        border-radius   : 50%;
-        content         : "";
-        position        : absolute;
-        display         : block;
-        bottom          : 7px;
-        left            : -18px;
-      }
-    }
-
     & .header__button {
       display        : flex;
       justify-content: center;
       align-items    : center;
       font-size      : 25px;
       margin-left    : 70px;
-
-      &:nth-child(2) {
-        margin-left: 600px;
-      }
 
       & a {
         color      : #4c5866;
@@ -731,7 +719,7 @@ li {
     display        : flex;
     justify-content: center;
     align-items    : center;
-    width          : 100vw;
+    width          : 100%;
 
     & .map {
       overflow: hidden;
