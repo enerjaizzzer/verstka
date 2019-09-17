@@ -1,70 +1,6 @@
-@media (max-width: 1600px) {
-  .header {
-    & .header-desctop {
-      & .header__logo {
-        margin-left: 10%;
-      }
-
-      & .header__button {
-        margin-left: 3%;
-
-        &:nth-child(2) {
-          margin-left: 30%;
-        }
-      }
-    }
-  }
-
-  .about {
-    & .about__info-elem {
-      width: 80%;
-    }
-  }
-
-  .banners {
-    width        : 80%;
-    margin-bottom: 123px;
-
-    & .banner-section {
-      &:nth-child(1) {
-        width: 40%;
-      }
-
-      &:nth-child(2) {
-        width: 20%;
-      }
-
-      &:nth-child(3) {
-        width: 20%;
-
-      }
-
-      &:nth-child(4) {
-        width: 20%;
-      }
-    }
-  }
-
-  .footer {
-    & .contacts-block {
-      width: 90%;
-    }
-  }
-}
-
 @media (max-width: 1280px) {
   .header {
-    & .header-desctop {
-      & .header__logo {
-        margin-left: 5%;
-      }
-
-      & .header__button {
-        &:nth-child(2) {
-          margin-left: 20%;
-        }
-      }
-    }
+    width: 90%;
   }
 
   .banners {
@@ -76,48 +12,39 @@
     margin-top: 76px;
 
     & .contacts-block {
-      width          : 100%;
-      margin         : 0 auto;
-      display        : flex;
-      flex-direction : row;
-      justify-content: center;
-      align-items    : center;
-
+      width          : 30%;
+    
       & .contacts-block__title {
-        margin-left: 50px;
-        margin-top : 0;
-        width      : 20%;
+        padding: 30px 0 30px;
       }
 
       & .contacts-block__contacts {
         display        : flex;
         justify-content: start;
-        align-items    : flex-start;
+        align-items    : start;
         flex-direction : column;
-        width          : 80%;
 
         & .contact {
-
-          margin-top: 20px;
+          margin: 20px 0;
 
           & a {
-            margin-left: 10px;
+            margin-left: 20px;
           }
 
           &:nth-child(1) {
-            margin-left: 30%;
+            margin-left: 0;
           }
 
           &:nth-child(2) {
-            margin-left: 30%;
+            margin-left: 0;
           }
 
           &:nth-child(3) {
-            margin-left: 30%;
+            margin-left: 0;
           }
 
           &:nth-child(4) {
-            margin-left: 30%;
+            margin-left: 0;
           }
         }
       }
@@ -130,6 +57,12 @@
 }
 
 @media (max-width: 1024px) {
+  .about {
+    & .about__info-elem {
+      width          : 90%;
+    }
+  }
+
   .banners {
     width          : 100%;
     display        : flex;
@@ -182,7 +115,7 @@
       & .banner-section__banner {
         & .banner__row {
           display        : flex;
-          justify-content: space-around;
+          justify-content: space-evenly;
 
           & .banner__elem {
             margin: 0;
@@ -369,37 +302,24 @@
 
     & .header-mobile {
       display: flex;
-
-      & .header__logo {
-        margin-left: 5%;
-      }
-
       & .header__button {
-
-        &:nth-child(2) {
-          margin-left: auto;
-          margin-right: 5%;
-        }
+        margin-left: auto;
       }
+    }
+  }
+  .footer {
+    height    : 100%;
+    margin-top: 76px;
+
+    & .contacts-block {
+      width          : 50%;
     }
   }
 }
 
 @media (max-width: 512px) {
-  .header {
-    & .header-desctop {
-      & .header__logo {
-        margin-left: 5%;
-      }
-
-      & .header__button {
-        margin-left: 3%;
-
-        &:nth-child(2) {
-          margin-left: 10%;
-        }
-      }
-    }
+  .carousel {
+    height: 400px;
   }
 
   .about {
@@ -441,26 +361,20 @@
     & .contacts-block {
       display        : flex;
       justify-content: start;
-
-      & .contacts-block__title {
-        display: none;
-      }
+      width: 60%;
     }
   }
 }
 
 @media (max-width: 320px) {
   .header {
+    & .header__logo {
+          font-size  : 30px;
+    }
     & .header-mobile {
       display: flex;
       justify-content: center;
-      & .header__logo {
-        & a {
-          & h1 {
-            font-size  : 30px;
-          }
-        }
-      }
+      
       & .header__button {
         &:nth-child(2) {
           margin-left: 5%;
@@ -502,22 +416,23 @@
   }
   .footer {
     & .contacts-block {
-      display        : flex;
-      justify-content: start;
+      width          : 100%;
+
       & .contacts-block__contacts {
-        width: 100%;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        flex-direction : column;
+
         & .contact {
-          &:nth-child(1) {
-            margin-left: 5%;
+          margin: 20px auto;
+
+          & a {
+            margin-left: 20px;
           }
-          &:nth-child(2) {
-            margin-left: 5%;
-          }
-          &:nth-child(3) {
-            margin-left: 5%;
-          }
-          &:nth-child(4) {
-            margin-left: 5%;
+
+          & img {
+            margin-left: 20px;
           }
         }
       }

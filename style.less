@@ -51,11 +51,12 @@ li {
   & .header__logo {
     position   : relative;
     margin-right: auto;
-    margin-left: 15px;
+    margin-left: 8px;
     color     : #3a4858;
     transition: 0.5s;
     font-size  : 39px;
     font-weight: 700;
+    white-space: nowrap;
       &:hover {
         color: rgba(255, 0, 0, 1);
       }
@@ -101,47 +102,12 @@ li {
     justify-content: start;
     align-items    : center;
 
-    & .header__logo {
-      margin-left: 336px;
-      position   : relative;
-
-      & a {
-        color     : #3a4858;
-        transition: 0.5s;
-
-        &:hover {
-          color: rgba(255, 0, 0, 1);
-        }
-
-        & h1 {
-          font-size  : 39px;
-          font-weight: 700;
-        }
-      }
-
-      &:after {
-        width           : 12px;
-        height          : 12px;
-        background-color: rgba(255, 0, 0, 1);
-        border-radius   : 50%;
-        content         : "";
-        position        : absolute;
-        display         : block;
-        bottom          : 7px;
-        left            : -18px;
-      }
-    }
-
     & .header__button {
       display        : flex;
       justify-content: center;
       align-items    : center;
       font-size      : 25px;
       margin-left    : 70px;
-
-      &:nth-child(2) {
-        margin-left: 600px;
-      }
 
       & a {
         color      : #4c5866;
@@ -197,6 +163,8 @@ li {
   position: relative;
   justify-content: center;
   align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
   &:before {
     content: "";
       width: 95px;
@@ -211,11 +179,12 @@ li {
   }
   & .carousel__container {
     display: flex;
+    width: 100%;
   }
 
   & .carousel__slide {
     position: relative;
-    flex    : 0 0 1920px;
+    flex    : 0 0 ;
 
     & img {
       overflow: hidden;
@@ -462,7 +431,7 @@ li {
           &:nth-child(1) {
             & .banner__elem {
               &:nth-child(2) {
-                margin: 95px 0 0 113px;
+                margin-left: 113px;
 
                 & a {
                   margin-top: 34px;
@@ -644,7 +613,7 @@ li {
     & .contacts-block__title {
       display        : flex;
       justify-content: center;
-      margin-top     : 69px;
+      padding     : 69px 0 84px;
 
       & h2 {
         color         : #ffffff;
@@ -662,7 +631,7 @@ li {
         display        : flex;
         justify-content: start;
         align-items    : center;
-        margin-top     : 84px;
+        
 
         & a {
           font-size     : 24px;

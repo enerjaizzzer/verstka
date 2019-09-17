@@ -41,11 +41,12 @@ li {
 .header .header__logo {
   position: relative;
   margin-right: auto;
-  margin-left: 15px;
+  margin-left: 8px;
   color: #3a4858;
   transition: 0.5s;
   font-size: 39px;
   font-weight: 700;
+  white-space: nowrap;
 }
 .header .header__logo:hover {
   color: #ff0000;
@@ -88,41 +89,12 @@ li {
   justify-content: start;
   align-items: center;
 }
-.header .header-mobile .header__logo {
-  margin-left: 336px;
-  position: relative;
-}
-.header .header-mobile .header__logo a {
-  color: #3a4858;
-  transition: 0.5s;
-}
-.header .header-mobile .header__logo a:hover {
-  color: #ff0000;
-}
-.header .header-mobile .header__logo a h1 {
-  font-size: 39px;
-  font-weight: 700;
-}
-.header .header-mobile .header__logo:after {
-  width: 12px;
-  height: 12px;
-  background-color: #ff0000;
-  border-radius: 50%;
-  content: "";
-  position: absolute;
-  display: block;
-  bottom: 7px;
-  left: -18px;
-}
 .header .header-mobile .header__button {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 25px;
   margin-left: 70px;
-}
-.header .header-mobile .header__button:nth-child(2) {
-  margin-left: 600px;
 }
 .header .header-mobile .header__button a {
   color: #4c5866;
@@ -171,6 +143,8 @@ li {
   position: relative;
   justify-content: center;
   align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 .carousel:before {
   content: "";
@@ -186,10 +160,11 @@ li {
 }
 .carousel .carousel__container {
   display: flex;
+  width: 100%;
 }
 .carousel .carousel__slide {
   position: relative;
-  flex: 0 0 1920px;
+  flex: 0 0 ;
 }
 .carousel .carousel__slide img {
   overflow: hidden;
@@ -379,7 +354,7 @@ li {
   text-decoration: underline;
 }
 .banners .banner-section:nth-child(1) .banner-section__banner .banner__row:nth-child(1) .banner__elem:nth-child(2) {
-  margin: 95px 0 0 113px;
+  margin-left: 113px;
 }
 .banners .banner-section:nth-child(1) .banner-section__banner .banner__row:nth-child(1) .banner__elem:nth-child(2) a {
   margin-top: 34px;
@@ -480,7 +455,7 @@ li {
 .footer .contacts-block .contacts-block__title {
   display: flex;
   justify-content: center;
-  margin-top: 69px;
+  padding: 69px 0 84px;
 }
 .footer .contacts-block .contacts-block__title h2 {
   color: #ffffff;
@@ -496,7 +471,6 @@ li {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-top: 84px;
 }
 .footer .contacts-block .contacts-block__contacts .contact a {
   font-size: 24px;
