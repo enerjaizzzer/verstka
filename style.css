@@ -7,6 +7,9 @@
   padding: 0;
   letter-spacing: 1px;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: PFDinTextCompPro;
 }
@@ -33,24 +36,36 @@ li {
   height: 80px;
   display: flex;
   text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 25;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.header div {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1280px;
-  margin: 0 auto;
+  width: 1370px;
 }
-.header .header__logo {
+.header div .header__logo {
   position: relative;
-  margin-left: 8px;
-  color: #3a4858;
-  transition: 0.5s;
+  margin-left: 100px;
   font-size: 39px;
   font-weight: 700;
   white-space: nowrap;
 }
-.header .header__logo:hover {
+.header div .header__logo a {
+  text-decoration: none;
+  color: #3a4858;
+  transition: 0.5s;
+}
+.header div .header__logo a:hover {
   color: #ff0000;
 }
-.header .header__logo:after {
+.header div .header__logo:after {
   width: 12px;
   height: 12px;
   background-color: #ff0000;
@@ -61,78 +76,83 @@ li {
   bottom: 7px;
   left: -18px;
 }
-.header .header-desctop {
+.header div .header-desctop {
   display: flex;
   justify-content: end;
   align-items: center;
 }
-.header .header-desctop .header__button {
+.header div .header-desctop .header__button {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 25px;
   margin-left: 70px;
 }
-.header .header-desctop .header__button a {
+.header div .header-desctop .header__button a {
   color: #4c5866;
   transition: 0.5s;
   font-size: 25px;
   font-weight: 700;
 }
-.header .header-desctop .header__button a:hover {
+.header div .header-desctop .header__button a:hover {
   color: #ff0000;
 }
-.header .header-mobile {
+.header div .header-mobile {
   display: none;
   width: 100%;
   justify-content: start;
   align-items: center;
 }
-.header .header-mobile .header__button {
+.header div .header-mobile .header__button {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 25px;
   margin-left: 70px;
 }
-.header .header-mobile .header__button a {
+.header div .header-mobile .header__button button {
   color: #4c5866;
   transition: 0.5s;
   font-size: 25px;
   font-weight: 700;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
 }
-.header .header-mobile .header__button a:hover {
+.header div .header-mobile .header__button button img {
+  opacity: 0.9;
+}
+.header div .header-mobile .header__button button:hover {
   color: #ff0000;
 }
-.header .header-mobile .header__button .submenu {
+.header div .header-mobile .header__button .submenu {
   display: none;
   position: absolute;
   width: 100%;
   top: 80px;
   left: 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid #3a4858;
 }
-.header .header-mobile .header__button .submenu > .header__button {
+.header div .header-mobile .header__button .submenu > .header__button {
   display: flex;
   flex-direction: column;
 }
-.header .header-mobile .header__button .submenu > .header__button:nth-child(1) {
+.header div .header-mobile .header__button .submenu > .header__button:nth-child(1) {
   margin-left: 0;
 }
-.header .header-mobile .header__button .submenu > .header__button:nth-child(3) {
+.header div .header-mobile .header__button .submenu > .header__button:nth-child(3) {
   margin-left: 0;
 }
-.header .header-mobile .header__button .submenu > .header__button > a {
+.header div .header-mobile .header__button .submenu > .header__button > a {
   display: block;
   padding: 10px;
   color: #3a4858;
   text-decoration: none;
 }
-.header .header-mobile .header__button .submenu > .header__button > a:hover {
+.header div .header-mobile .header__button .submenu > .header__button > a:hover {
   text-decoration: underline;
 }
-.header .header-mobile .header__button:hover > .submenu {
+.header div .header-mobile .header__button:hover > .submenu {
   display: block;
   z-index: 20;
 }
@@ -143,7 +163,7 @@ li {
   justify-content: center;
   align-items: center;
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 80px auto 0;
 }
 .carousel:before {
   content: "";
