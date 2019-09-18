@@ -34,3 +34,70 @@ setupDotBtns(dotsArray, carousel);
 
 carousel.on('select', setSelectedDotBtn);
 carousel.on('init', setSelectedDotBtn);
+
+let subOpen = false;
+const buttonSub = document.querySelector('.button-sub');
+let subMenu;
+
+buttonSub.onclick = () => {
+  subOpen = !subOpen;
+
+  if (subOpen) {
+    subMenu = document.createElement('ul');
+    subMenu.classList.add('submenu');
+    buttonSub.append(subMenu);
+
+    const butCompany = document.createElement('li');
+    butCompany.classList.add('header__button');
+    subMenu.append(butCompany);
+    const linkCompany = document.createElement('a');
+    linkCompany.href = '#company';
+    butCompany.append(linkCompany);
+    linkCompany.textContent = 'О КОМПАНИИ';
+
+    const butProjects = document.createElement('li');
+    butProjects.classList.add('header__button');
+    subMenu.append(butProjects);
+    const linkProjects = document.createElement('a');
+    linkProjects.href = '#projects';
+    butProjects.append(linkProjects);
+    linkProjects.textContent = 'ПРОЕКТЫ';
+
+    const butContacts = document.createElement('li');
+    butContacts.classList.add('header__button');
+    subMenu.append(butContacts);
+    const linkContacts = document.createElement('a');
+    linkContacts.href = '#contacts';
+    butContacts.append(linkContacts);
+    linkContacts.textContent = 'КОНТАКТЫ';
+  } else {
+    subMenu.parentNode.removeChild(subMenu);
+  }
+  // const subMenu = document.createElement('ul');
+  // subMenu.classList.add('submenu');
+  // buttonSub.append(subMenu);
+
+  // const butCompany = document.createElement('li');
+  // butCompany.classList.add('header__button');
+  // subMenu.append(butCompany);
+  // const linkCompany = document.createElement('a');
+  // linkCompany.href = '#';
+  // butCompany.append(linkCompany);
+  // linkCompany.textContent = 'О КОМПАНИИ';
+
+  // const butProjects = document.createElement('li');
+  // butProjects.classList.add('header__button');
+  // subMenu.append(butProjects);
+  // const linkProjects = document.createElement('a');
+  // linkProjects.href = '#';
+  // butProjects.append(linkProjects);
+  // linkProjects.textContent = 'ПРОЕКТЫ';
+
+  // const butContacts = document.createElement('li');
+  // butContacts.classList.add('header__button');
+  // subMenu.append(butContacts);
+  // const linkContacts = document.createElement('a');
+  // linkContacts.href = '#';
+  // butContacts.append(linkContacts);
+  // linkContacts.textContent = 'ПРОЕКТЫ';
+};

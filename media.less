@@ -1,8 +1,42 @@
-@media (max-width: 1280px) {
-  .header {
-    width: 90%;
-  }
+@media (max-width: 1600px) {
+  // .header {
+  //   width: 90%;
+  // }
 
+  .footer {
+    & .contacts-block {
+      width: 100%;
+      & .contacts-block__contacts {
+        justify-content: space-evenly;
+        & .contact {
+          &:nth-child(1) {
+            margin-left: 0;
+          }
+
+          &:nth-child(2) {
+            margin-left: 0;
+          }
+
+          &:nth-child(3) {
+            margin-left: 0;
+          }
+
+          &:nth-child(4) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .about {
+    & .about__info-elem {
+      width          : 90%;
+    }
+  }
+  
   .banners {
     width: 90%;
   }
@@ -57,12 +91,15 @@
 }
 
 @media (max-width: 1024px) {
-  .about {
-    & .about__info-elem {
-      width          : 90%;
+  .header {
+    & div {
+      & .header-desctop {
+        & .header__button {
+          margin-left: 20px;
+        }
+      }
     }
   }
-
   .banners {
     width          : 100%;
     display        : flex;
@@ -296,14 +333,19 @@
 
 @media (max-width: 768px) {
   .header {
-    & .header-desctop {
-      display: none;
-    }
-
-    & .header-mobile {
-      display: flex;
-      & .header__button {
-        margin-left: auto;
+    & div {
+      & .header__logo {
+        margin-left: 30px;
+      }
+      & .header-desctop {
+        display: none;
+      }
+  
+      & .header-mobile {
+        display: flex;
+        & .header__button {
+          margin-left: auto;
+        }
       }
     }
   }
@@ -318,6 +360,16 @@
 }
 
 @media (max-width: 512px) {
+  .header {
+    & div {
+      & .header__logo {
+        & a {
+          font-size  : 30px;
+        }
+      }
+    }
+  }
+
   .carousel {
     height: 400px;
   }
@@ -368,16 +420,15 @@
 
 @media (max-width: 320px) {
   .header {
-    & .header__logo {
-          font-size  : 30px;
-    }
-    & .header-mobile {
-      display: flex;
-      justify-content: center;
-      
-      & .header__button {
-        &:nth-child(2) {
-          margin-left: 5%;
+    & div {
+      & .header-mobile {
+        display: flex;
+        justify-content: center;
+        
+        & .header__button {
+          &:nth-child(2) {
+            margin-left: 5%;
+          }
         }
       }
     }
