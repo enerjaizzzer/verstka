@@ -1,7 +1,7 @@
 @font-face {
   font-family: PFDinTextCompPro;
   src        : url(src/fonts/PFDinTextCompPro-Light.ttf),
-  url(src/fonts/ofont.ru_PF\ Din\ Text\ Comp\ Pro\ Medium.ttf);
+    url(src/fonts/ofont.ru_PF\ Din\ Text\ Comp\ Pro\ Medium.ttf);
 }
 
 * {
@@ -16,7 +16,7 @@ html {
 
 body {
   font-family: PFDinTextCompPro;
-  
+
 }
 
 h1 {
@@ -44,35 +44,41 @@ li {
 }
 
 .header {
-  height        : 80px;
-  display       : flex;
-  text-transform: uppercase;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  position: fixed;
-  z-index: 25;
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  height          : 80px;
+  display         : flex;
+  text-transform  : uppercase;
+  justify-content : center;
+  align-items     : center;
+  width           : 100%;
+  position        : fixed;
+  z-index         : 25;
+  top             : 0;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
   & div {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
-    width: 1370px;
+    align-items    : center;
+    width          : 67%;
+
     & .header__logo {
       position   : relative;
-      margin-left: 100px;
+      margin-left: 20px;
       font-size  : 39px;
       font-weight: 700;
       white-space: nowrap;
+
       a {
         text-decoration: none;
-        color     : #3a4858;
-        transition: 0.5s;
+        color          : #3a4858;
+        transition     : 0.5s;
+
         &:hover {
           color: rgba(255, 0, 0, 1);
         }
       }
+
       &:after {
         width           : 12px;
         height          : 12px;
@@ -85,36 +91,53 @@ li {
         left            : -18px;
       }
     }
+
     & .header-desctop {
       display        : flex;
       justify-content: end;
       align-items    : center;
+
       & .header__button {
         display        : flex;
         justify-content: center;
         align-items    : center;
         font-size      : 25px;
         margin-left    : 70px;
-  
+
         & a {
           color      : #4c5866;
           transition : 0.5s;
           font-size  : 25px;
           font-weight: 700;
-  
+
           &:hover {
             color: rgba(255, 0, 0, 1);
           }
         }
       }
     }
-  
+
+    & .header__submenu {
+      display: none;
+      background-color: #ffffff;
+      padding: 5px 10px;
+      border: 1px solid #4c5866;
+      border-radius: 5px;
+    }
+
     & .header-mobile {
-      display        : none;
+      display        : flex;
       width          : 100%;
-      justify-content: start;
+      flex-direction: column;
+      justify-content: center;
       align-items    : center;
-  
+      position        : absolute;
+      width           : 100%;
+      top             : 80px;
+      left            : 0;
+      background-color: rgba(255, 255, 255, 1);
+      border          : 1px solid #3a4858;
+
       & .header__button {
         display        : flex;
         justify-content: center;
@@ -122,88 +145,64 @@ li {
         font-size      : 25px;
         margin-left    : 70px;
 
-        & button {
+        &:nth-child(1) {
+          margin-left: 0;
+        }
+
+        &:nth-child(2) {
+          margin-left: 0;
+        }
+
+        &:nth-child(3) {
+          margin-left: 0;
+        }
+
+        & a {
           color      : #4c5866;
           transition : 0.5s;
           font-size  : 25px;
           font-weight: 700;
-          border: none;
-          background-color: rgba(255, 255, 255, 0);
-          img {
-            opacity: 0.9;
-          }
+
           &:hover {
             color: rgba(255, 0, 0, 1);
-          }
-        }
-        & .submenu {
-          display: none;
-          position: absolute;
-          width: 100%;
-          top: 80px;
-          left: 0;
-          background-color: rgba(255, 255, 255, 0.9);
-          border: 1px solid #3a4858;
-          & > .header__button {
-            display: flex;
-            flex-direction: column;
-            &:nth-child(1) {
-              margin-left: 0;
-            }
-            &:nth-child(3) {
-              margin-left: 0;
-            }
-            & > a {
-              display: block;
-              padding: 10px;
-              color: #3a4858;
-              text-decoration: none;
-              &:hover {
-                text-decoration: underline;
-              }
-            }
-          }
-        }
-        &:hover {
-          & > .submenu {
-            display: block;
-            z-index: 20;
           }
         }
       }
     }
   }
-  
+
 }
 
 .carousel {
-  display: flex;
-  overflow: hidden;
-  position: relative;
+  display        : flex;
+  overflow       : hidden;
+  position       : relative;
   justify-content: center;
-  align-items: center;
-  max-width: 1920px;
-  margin: 80px auto 0;
+  align-items    : center;
+  max-width      : 1920px;
+  margin         : 80px auto 0;
+
   &:before {
-    content: "";
-      width: 95px;
-      height: 95px;
-      opacity: 0.5;
-      border-radius: 50%;
-      display: flex;
-      position: absolute;
-      background-color:red;
-      z-index: 17;
-      margin-top: 80px;
+    content         : "";
+    width           : 95px;
+    height          : 95px;
+    opacity         : 0.5;
+    border-radius   : 50%;
+    display         : flex;
+    position        : absolute;
+    background-color: red;
+    z-index         : 17;
+    margin-top      : 80px;
   }
+
   & .carousel__container {
     display: flex;
-    width: 100%;
+    width  : 100%;
   }
 
   & .carousel__slide {
     position: relative;
-    flex    : 0 0 ;
+    flex    : 0 0;
 
     & img {
       overflow: hidden;
@@ -632,7 +631,7 @@ li {
     & .contacts-block__title {
       display        : flex;
       justify-content: center;
-      padding     : 69px 0 84px;
+      padding        : 69px 0 84px;
 
       & h2 {
         color         : #ffffff;
@@ -650,7 +649,7 @@ li {
         display        : flex;
         justify-content: start;
         align-items    : center;
-        
+
 
         & a {
           font-size     : 24px;
