@@ -14,34 +14,23 @@
 
 <body>
   <header class="header">
-    <h1 class="header__logo">food retail group</h1>
-    <ul class="header-desctop">      
+    <div>
+    <h1 class="header__logo">
+      <a href='#'>food retail group</a>
+    </h1>
+    <ul class="menu header-desctop">      
       <li class="header__button">
-        <a href="#">о компании</a>
+        <a href="#company">о компании</a>
       </li>
       <li class="header__button">
-        <a href="#">проекты</a>
+        <a href="#projects">проекты</a>
       </li>
       <li class="header__button">
-        <a href="#">контакты</a>
-      </li>
-    </ul>
-    <ul class="header-mobile">
-      <li class="header__button">
-        <a href="#"><img src="src/img/menu.png" alt=""></a>
-        <ul class="submenu">
-          <li class="header__button">
-            <a href="#">о компании</a>
-          </li>
-          <li class="header__button">
-            <a href="#">проекты</a>
-          </li>
-          <li class="header__button">
-            <a href="#">контакты</a>
-          </li>
-        </ul>
+        <a href="#contacts">контакты</a>
       </li>
     </ul>
+    <button class="header__submenu">Menu</button>
+  </div>
   </header>
   <main>
     <div class="carousel">
@@ -66,7 +55,7 @@
       </div>
       <div class="carousel__dots"></div>
     </div>
-    <div class="about">
+    <div id="company" class="about">
       <div class="about__title">
         <h2>о компании</h2>
       </div>
@@ -106,7 +95,7 @@
         </div>
       </div>
     </div>
-    <div class="banners">
+    <div id="projects" class="banners">
       <div class="banner-section">
         <div class="banner-section__title">
           <div class="title__border">
@@ -231,7 +220,7 @@
     </div>
   </main>
   <footer class="footer">
-    <div class="contacts-block">
+    <div id="contacts" class="contacts-block">
       <div class="contacts-block__title">
         <h2>КОНТАКТЫ</h2>
       </div>
