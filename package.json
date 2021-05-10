@@ -22,7 +22,7 @@
     "embla-carousel": "^2.4.5",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "owl.carousel": "^2.3.4",
     "production": "0.0.2"
   },
